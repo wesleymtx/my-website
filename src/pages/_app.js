@@ -12,20 +12,42 @@ const GlobalStyle = createGlobalStyle`
 }
 body{
   background-color: ${props=>props.theme.background};
+  background-image: ${props=>props.theme.backgroundImage};
+  transition:background-color 300ms;
 }
 a{
   color: white;
 }
+.checkbtn{
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display:none;
+}
+@media (max-width: 500px){
+  .checkbtn{
+    display: flex
+  }
+  #check:checked ~ .side-menu{
+    padding-right: 200px;
+  }
+}
+
 `
 const darkTheme = {
   themeName: 'darkTheme',
   primary: 'red',
-  background: '#484848'
+  background: '#484848',
+  backgroundImage: 'url(star-night.svg)'
 }
 const lightTheme = {
   themeName: 'lightTheme',
   primary: 'red',
-  background: '#f1f1f1'
+  background: '#f1f1f1',
+  backgroundImage: 'url(star-light.svg)'
 }
 
 export default function App({ Component, pageProps }) {  
