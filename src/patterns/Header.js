@@ -4,12 +4,12 @@ import ContentHeader from  '../components/header/ContentHeader'
 import HideMenu from '../components/header/HideMenu'
 export default function Header({toggleTheme, theme}){
     return (
-        <div>
+        <>
             <ContainerHeader>
-                <TitleHeader>Wesley Gimenez</TitleHeader>
+                <TitleHeader><strong>Wesley</strong> Gimenez</TitleHeader>
                 <ContentHeader toggleTheme={toggleTheme} theme={theme}></ContentHeader>
-                <HideMenu></HideMenu>
+                <HideMenu toggleTheme={toggleTheme}></HideMenu>
             </ContainerHeader>
-        </div>
+        </>
     )
 }

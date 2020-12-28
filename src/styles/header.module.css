@@ -1,31 +1,3 @@
-.green{
-    color: green;
-    border: 1px solid black;
-}
-.hideMenu{
-    color: blueviolet;
-    background-color: brown;
-}
-.teste2{
-    background-color: burlywood!important;
-}
-.red{
+.teste{
     background-color: red!important;
-}
-.checkbtn{
-    color: #fff;
-    float: right;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display:none;
-}
-@media (max-width: 500px){
-    .checkbtn{
-      display: flex
-    }
-    #check:checked ~ .teste2{
-      padding-right: 200px;
-    }
 }

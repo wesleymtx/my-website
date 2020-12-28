@@ -1,14 +1,13 @@
 import styled from 'styled-components'
-import styles from '../../styles/header.module.css'
-import ToggleThemeButton from './ToggleThemeButton'
-const HeaderComponent = ({ className, children, teste })=>(
+
+const HeaderComponent = ({ className, children })=>(
     <li className={className}>
-        {children}
+        <a>{children}</a>
     </li>
 )
+
 const ItemHeader = styled(HeaderComponent)`
-    color: white;
-    font-size: 16px;
+    font-size: 24px;
     margin-left: 1em;
 `
 

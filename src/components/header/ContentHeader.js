@@ -1,29 +1,26 @@
 import styled from 'styled-components';
 import ItemHeader from '../header/ItemHeader';
-import StyledToggle from './ToggleThemeButton';
-import { FiSun, FiStar } from "react-icons/fi";
+import ToggleTheme from './ToggleTheme';
+import menuItems from '../../apis/itemsHeader';
+
 const ContainerContentHeader = styled.ul`
     display: flex;
     align-items: center;
     font-size: 14px;
-    @media(max-width:500px){
+    @media(max-width:800px){
        display: none;
     }
 `
 
-
-
-export default function ContentHeader({children, toggleTheme, theme}){
+export default function ContentHeader({ toggleTheme }){
     return (
     <>
         <ContainerContentHeader>
-        <StyledToggle toggleTheme={toggleTheme}>
-            {theme.themeName=='lightTheme'?<FiStar/>:<FiSun/>}
-        </StyledToggle>
-        <ItemHeader>cursos</ItemHeader>
-        <ItemHeader>portifólio</ItemHeader>
-        <ItemHeader>contato</ItemHeader>
-    </ContainerContentHeader>
+            <ToggleTheme toggleTheme={toggleTheme}/>
+            {menuItems.map((item, i)=>{
+                return <ItemHeader key={i}>{item.title}</ItemHeader>
+            })}
+        </ContainerContentHeader>
     </>
     
     )

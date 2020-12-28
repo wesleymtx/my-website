@@ -1,10 +1,8 @@
-import styled from 'styled-components'
-import Header from '../patterns/Header'
-
-export default function Home({toggleTheme, theme}) {
+import Header from '../patterns/Header';
+import HomePage from '../patterns/HomePage';
+export default function Home() {
   return (
-    <div>
-    <Header toggleTheme={toggleTheme} theme={theme}></Header>
-  </div>
+    <HomePage>
+    </HomePage>
   )
 }
