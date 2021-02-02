@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 
-const HeaderComponent = ({ className, children })=>(
-    <li className={className}>
-        <a>{children}</a>
-    </li>
+const StyledItemHeader = styled.a`
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+`
+
+const ItemHeader = ({ className, children, href })=>(
+        <StyledItemHeader href={href}>{children}</StyledItemHeader>
 )
 
-const ItemHeader = styled(HeaderComponent)`
-    font-size: 24px;
-    margin-left: 1em;
-`
+
 
 export default ItemHeader;

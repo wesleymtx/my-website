@@ -14,7 +14,7 @@ const H2 = styled.h2`
     max-width: 700px;
 `
 const H3 = styled.h3`
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
     margin-top: 10px;
 `

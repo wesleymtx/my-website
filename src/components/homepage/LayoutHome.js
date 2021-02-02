@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 const ContainerItems = styled.div`
-    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     max-width: 80%;

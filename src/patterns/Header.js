@@ -6,7 +6,7 @@ export default function Header({toggleTheme, theme}){
     return (
         <>
             <ContainerHeader>
-                <TitleHeader><strong>Wesley</strong> Gimenez</TitleHeader>
+                <TitleHeader href="/"><strong>Wesley</strong> Gimenez</TitleHeader>
                 <ContentHeader toggleTheme={toggleTheme} theme={theme}></ContentHeader>
                 <HideMenu toggleTheme={toggleTheme}></HideMenu>
             </ContainerHeader>

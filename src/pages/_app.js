@@ -6,9 +6,9 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
 
-  list-style: none;
-  text-decoration: none;
-  font-family: sans-serif;
+list-style: none;
+text-decoration: none;
+font-family: sans-serif;
 }
 body{
   background-color: ${props=>props.theme.background};
@@ -17,8 +17,11 @@ body{
   color: ${props=>props.theme.color};
   
 }
-html, body{
+html, body, #__next{
     height:100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
 
 `

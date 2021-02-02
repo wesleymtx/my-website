@@ -18,7 +18,7 @@ export default function ContentHeader({ toggleTheme }){
         <ContainerContentHeader>
             <ToggleTheme toggleTheme={toggleTheme}/>
             {menuItems.map((item, i)=>{
-                return <ItemHeader key={i}>{item.title}</ItemHeader>
+                return <ItemHeader key={i} href={item.href}>{item.title}</ItemHeader>
             })}
         </ContainerContentHeader>
     </>

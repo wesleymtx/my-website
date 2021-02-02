@@ -1,18 +1,14 @@
 const menuItems = [
+  ,
     {
-        title: 'cursos',
-        url: '#',
-        cName: 'nav-links'
-    },
-    {
-        title: 'portifólio',
-        url: '#',
-        cName: 'nav-links'
+        title: 'homepage',
+        href: '/',
+        
     },
     {
         title: 'contato',
-        url: '#',
-        cName: 'nav-links'
+        href: '/contato',
+        
     },
     
 ]
