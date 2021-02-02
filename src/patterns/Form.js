@@ -4,7 +4,7 @@ import InputText from '../components/form/InputText';
 import InputEmail from '../components/form/InputEmail';
 import InputSubmit from '../components/form/InputSubmit';
 import H2 from '../components/h2/index.js'
-import TextArea from '../components/TextArea/index.js'
+import TextArea from '../components/textArea/index.js'
 
 export default function Form(){
     const handleForm = (event)=>{
