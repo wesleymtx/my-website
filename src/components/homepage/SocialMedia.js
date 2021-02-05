@@ -14,8 +14,9 @@ const StyledIconMedia = styled.a.attrs(()=>({
     target: '_blank'
 }))`
     font-size: 30px;
-    color: #232931;
+    text-decoration: none;
     transition: 0.2s;
+    
     :hover{
         transform: translateY(1.5px)
 

@@ -1,6 +1,6 @@
 import MainHome from '../components/homepage/MainHome';
 import {ColumnItems, ContainerItems} from '../components/homepage/LayoutHome';
-import PhotoProfile from '../components/photoProfile/PhotoProfile';
+import PhotoProfile from '../patterns/PhotoProfile';
 import {H1, H2, H3} from '../components/homepage/Titles';
 import RowSocialMedia from '../components/homepage/SocialMedia';
 

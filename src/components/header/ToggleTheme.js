@@ -3,19 +3,21 @@ import { FiSun, FiStar } from "react-icons/fi";
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 
-const ToggleTheme = ({className, toggleTheme, style})=>{
-    const themeContext = useContext(ThemeContext);
-    return (
-        <a className={className} style={style} onClick={_=>toggleTheme()}>
-         {themeContext.themeName=='lightTheme'?<FiStar/>:<FiSun/>}
-        </a>
-    )
-}
-
-const StyledToggle = styled(ToggleTheme)`
+const StyledToggle = styled.a`
     display: flex;
     color: #ffd369;
     cursor: pointer;
     font-size: 24px;    
 `
-export default StyledToggle;
+
+const ToggleTheme = ({className, toggleTheme})=>{
+    const themeContext = useContext(ThemeContext);
+    return (
+        <StyledToggle className={className} onClick={_=>toggleTheme()}>
+         {themeContext.themeName=='lightTheme'?<FiStar/>:<FiSun/>}
+        </StyledToggle>
+    )
+}
+
+
+export default ToggleTheme;

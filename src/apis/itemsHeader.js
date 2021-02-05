@@ -10,6 +10,10 @@ const menuItems = [
         href: '/contato',
         
     },
+    {
+        title: 'portifólio',
+        href: 'portifolio'
+    }
     
 ]
 export default menuItems;

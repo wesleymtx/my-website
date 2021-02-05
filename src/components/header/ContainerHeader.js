@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-const StyleContainHeader = styled.div`
+const StyledContainHeader = styled.div`
   background: #232931;
   color: white;
   display: flex;
@@ -11,5 +11,5 @@ const StyleContainHeader = styled.div`
 `;
 
 export default function ContainerHeader({children}){
-return <StyleContainHeader>{children}</StyleContainHeader>
+return <StyledContainHeader>{children}</StyledContainHeader>
 }
