@@ -9,10 +9,12 @@ export default function HomePage(){
         <MainHome>
             <ContainerItems>
             <ColumnItems>
+            <div>
                 <PhotoProfile src='foto-perfil.jpg'/>
                 <RowSocialMedia/>
+            </div>
             </ColumnItems>
-            <ColumnItems style={{marginLeft: '50px'}}>
+            <ColumnItems>
                 <H1>Desenvolvedor Front -End</H1>
                 <H2>Trabalho com o desenvolvimento de aplicações webs e integrações com o backend.</H2>
                 <H3>Tecnologias que já utilizei: Node, Next JS, React</H3>

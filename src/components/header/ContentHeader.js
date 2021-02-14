@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import ItemHeader from '../header/ItemHeader';
 import ToggleTheme from './ToggleTheme';
 import menuItems from '../../apis/itemsHeader';
-
+import Link from 'next/link'
+import StyledLink from './StyledLink'
 const ContainerContentHeader = styled.ul`
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ export default function ContentHeader({ toggleTheme }){
         <ContainerContentHeader>
             <ToggleTheme toggleTheme={toggleTheme}/>
             {menuItems.map((item, i)=>{
-                return <ItemHeader key={i} href={item.href}>{item.title}</ItemHeader>
+                return <Link key={i} href={item.href}><StyledLink>{item.title}</StyledLink></Link>
             })}
         </ContainerContentHeader>
     </>

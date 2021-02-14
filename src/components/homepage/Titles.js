@@ -8,10 +8,17 @@ const H1 = styled.h1`
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 40px;
+    @media screen and (max-width: 885px){
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
 `
 const H2 = styled.h2`
     font-size: 26px;
     max-width: 700px;
+    @media screen and (max-width: 885px){
+        font-size: 18px;
+    }
 `
 const H3 = styled.h3`
     font-size: 18px;

@@ -1,10 +1,14 @@
-import ContainerForm from '../../components/contato/ContainerForm';
-import FormComponent from '../../components/contato/FormComponent';
-import InputText from '../../components/contato/InputText';
-import InputEmail from '../../components/contato/InputEmail';
-import InputSubmit from '../../components/contato/InputSubmit';
-import {H2} from '../../components/contato/Titles'
-import TextArea from '../../components/contato/TextArea'
+import FormComponent from '../../components/contato/form/FormComponent';
+import InputText from '../../components/contato/form/InputText';
+import InputEmail from '../../components/contato/form/InputEmail';
+import InputSubmit from '../../components/contato/form/InputSubmit';
+import {H2} from '../../components/contato/form/Titles';
+import TextArea from '../../components/contato/form/TextArea';
+import PhotoProfile from '../../patterns/PhotoProfile';
+import ContainerCard from '../../components/contato/card/containerCard';
+import contacts from '../../apis/contacts';
+import { AiOutlineMail,  AiFillLinkedin} from "react-icons/ai";
+
 
 export default function Form(){
     const handleForm = (event)=>{
@@ -45,21 +49,25 @@ export default function Form(){
         .catch((e)=>{
             console.error('erro')
         })
-       
     }
     return (
-    <>
-        <ContainerForm>
+    <div style={{'background-color': 'red','margin':'0 auto', 'width': '80vw'}}>
+            <ContainerCard>
+                <PhotoProfile src="foto-perfil.jpg"></PhotoProfile>
+                <ul>
+                    {contacts.map((contact)=>{
+                    return <div><li><a href="#">{contact.icon} {contact.description}</a></li></div>
+                })}
+                </ul>
+            </ContainerCard>
             <FormComponent onSubmit={handleForm}>
                 <H2>Entre em contato</H2>      
                 <InputText placeholder="Seu Nome"/>   
                 <InputEmail placeholder="Seu Email"/>   
                 <InputText placeholder="Assunto"/>   
                 <TextArea placeholder="Mensagem"></TextArea>
-                
                 <InputSubmit/>
             </FormComponent>
-        </ContainerForm>
-    </>
+    </div>
     )
 }

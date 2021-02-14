@@ -4,10 +4,9 @@ const StyledContainHeader = styled.div`
   color: white;
   display: flex;
   font-size: 1em;
-  position: relative;
   padding: 0.25em 10%;
   justify-content: space-between;
-  z-index: 10;
+  width: 100vw;
 `;
 
 export default function ContainerHeader({children}){

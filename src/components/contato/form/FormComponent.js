@@ -6,7 +6,6 @@ const StyledContentForm = styled.form`
     align-items: center;
     flex-direction: column;
     background-color: #cecece;
-    position: absolute;
     width: fit-content;
     height: 400px;
     border-radius: 10px;

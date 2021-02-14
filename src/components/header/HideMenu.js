@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { FaBars } from "react-icons/fa";
-import ItemHeader from './ItemHeader';
+import StyledLink from './StyledLink';
 import ToggleTheme from './ToggleTheme';
 import menuItems from '../../apis/itemsHeader';
 
-const HideItemHeader = styled(ItemHeader)`
+const HideItemHeader = styled(StyledLink)`
     padding: 8px 16px;
     margin: 0px;
     border-bottom: 1px solid #fff;

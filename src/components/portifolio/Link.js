@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-const Link = styled.a`
+const Link = styled.a.attrs(()=>({
+    target: "_blank",
+}))`
     background-color: #0795e9;
     font-size: 14px;
     border-radius: 5px;

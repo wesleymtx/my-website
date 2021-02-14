@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   text-decoration: none;
   font-family: sans-serif;
   text-decoration: none;
-  
+  box-sizing: border-box;
 }
 li{
   font-size: 18px;
@@ -26,8 +26,10 @@ body{
   transition:background-color 300ms;
   color: ${props=>props.theme.color};
 }
+
 html, body, #__next{
     height:100%;
+    width:100vw;
     margin: 0;
     padding: 0;
     border: 0;
