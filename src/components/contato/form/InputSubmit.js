@@ -3,7 +3,8 @@ import styled from 'styled-components'
 const StyledInputSubmit = styled.input.attrs(()=>({
     type: "submit",
 }))`
-    background-color: #5bffca;
+    background-color: #845ec2;
+    color: white;
     border-radius: 5px;
     outline: none;
     border: none;
@@ -11,9 +12,9 @@ const StyledInputSubmit = styled.input.attrs(()=>({
     padding: 4px;
     font-size: 16px;
     font-weight: 600;
-    width: 100px;
+    width: 100%;
     :hover{
-        background-color: #0af7aa;
+        background-color: #8459ca;
     }
 
 `

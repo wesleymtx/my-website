@@ -7,7 +7,7 @@ const StyledTextArea = styled.textarea`
     border-radius: 5px;
     padding: 8px;
     font-size: 16px;
-    width: 500px;
+    width: 100%;
     height: 400px;
     resize: none;
     :hover{

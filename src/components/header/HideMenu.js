@@ -3,15 +3,7 @@ import { FaBars } from "react-icons/fa";
 import StyledLink from './StyledLink';
 import ToggleTheme from './ToggleTheme';
 import menuItems from '../../apis/itemsHeader';
-
-const HideItemHeader = styled(StyledLink)`
-    padding: 8px 16px;
-    margin: 0px;
-    border-bottom: 1px solid #fff;
-    a{
-        margin: 5px;
-    }
-`
+import Link from 'next/link';
 
 const AsideMenu = styled.aside`
     position: fixed;
@@ -25,6 +17,14 @@ const ContentHideMenu = styled.ul`
     background-color: #232931;
     display: flex;
     flex-direction: column;
+    a{
+        color: white!important;
+        border-bottom: 1px solid white;
+    }
+    > *{
+       padding: 8px 12px; 
+       font-size: 22px;
+    }
 `
 const ToggleBtn = styled.label`
   color: #fff;
@@ -52,7 +52,7 @@ export default function HideMenu({toggleTheme}){
             <AsideMenu className="side-menu">
                 <ContentHideMenu>
                     {menuItems.map((item, i)=>{
-                        return <HideItemHeader key={i}>{item.title}</HideItemHeader>
+                        return <Link href={item.href} key={i}>{item.title}</Link>
                     })}
                     <ToggleTheme style={{padding: "8px 16px"}} toggleTheme={toggleTheme}/>
                 </ContentHideMenu>

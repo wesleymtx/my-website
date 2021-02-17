@@ -7,7 +7,6 @@ import TextArea from '../../components/contato/form/TextArea';
 import PhotoProfile from '../../patterns/PhotoProfile';
 import ContainerCard from '../../components/contato/card/containerCard';
 import contacts from '../../apis/contacts';
-import { AiOutlineMail,  AiFillLinkedin} from "react-icons/ai";
 
 
 export default function Form(){
@@ -51,7 +50,7 @@ export default function Form(){
         })
     }
     return (
-    <div style={{'background-color': 'red','margin':'0 auto', 'width': '80vw'}}>
+    <div style={{'display':'flex', 'flex-direction':'column', 'align-items':'center'}}>
             <ContainerCard>
                 <PhotoProfile src="foto-perfil.jpg"></PhotoProfile>
                 <ul>

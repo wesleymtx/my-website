@@ -1,5 +1,6 @@
 export const experiencies = [
     {title: 'Graduação', descricao: "Graduando em Sistemas de Informação"},
+    {title: "Estágio", descricao: "Estágio em desenvolvimento web"},
     {title: 'Empresas que trabalhei', descricao: "GPDP e Visual Mix"},
     {title: "Freelancer", descricao: "Atuo como desenvolvedor freelancer"}
 ]

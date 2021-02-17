@@ -1,11 +1,32 @@
-import { FaBluetooth } from 'react-icons/fa'
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-const StyledH2 = styled.h2`
-    color: #551a8b;
-    margin:5px;
-    outline:none;
+const H1 = styled.h1`
+    background-color: #845ec2;
+    color: #121013;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 40px;
+    @media screen and (max-width: 885px){
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
 `
-export const H2 = ({children})=>{
-    return <StyledH2>{children}</StyledH2>
+const H2 = styled.h2`
+    font-size: 26px;
+    max-width: 700px;
+    @media screen and (max-width: 885px){
+        font-size: 18px;
+    }
+`
+const H3 = styled.h3`
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10px;
+`
+export{
+    H1,
+    H2,
+    H3
 }

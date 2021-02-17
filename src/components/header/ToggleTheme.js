@@ -3,7 +3,7 @@ import { FiSun, FiStar } from "react-icons/fi";
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 
-const StyledToggle = styled.a`
+const StyledToggle = styled.span`
     display: flex;
     color: #ffd369;
     cursor: pointer;

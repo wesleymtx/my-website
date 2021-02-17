@@ -6,9 +6,19 @@ const StyledContentForm = styled.form`
     align-items: center;
     flex-direction: column;
     background-color: #cecece;
-    width: fit-content;
+    width: 500px;
     height: 400px;
     border-radius: 10px;
+    @media screen and (max-width: 700px){
+        padding: 0.5rem;
+        width: 90%;
+        h2{
+            font-size: 18px;
+        }
+        input, textarea{
+            font-size: 12px;
+        }
+    }
     
 `
 

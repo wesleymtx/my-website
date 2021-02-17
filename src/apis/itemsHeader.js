@@ -6,14 +6,14 @@ const menuItems = [
         
     },
     {
+        title: 'portifólio',
+        href: 'portifolio'
+    },
+    {
         title: 'contato',
         href: '/contato',
         
     },
-    {
-        title: 'portifólio',
-        href: 'portifolio'
-    }
     
 ]
 export default menuItems;

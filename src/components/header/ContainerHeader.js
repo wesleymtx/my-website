@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 const StyledContainHeader = styled.div`
-  background: #232931;
+  background: #121013;
   color: white;
   display: flex;
   font-size: 1em;

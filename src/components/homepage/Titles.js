@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const H1 = styled.h1`
-    background-color: #5bffca;
-    color: #232931;
+    background-color: #845ec2;
+    color: #121013;
     font-size: 18px;
     padding: 4px;
     border-radius: 4px;

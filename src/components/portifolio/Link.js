@@ -3,15 +3,15 @@ import styled from 'styled-components';
 const Link = styled.a.attrs(()=>({
     target: "_blank",
 }))`
-    background-color: #0795e9;
+    background-color: #845ec2;
     font-size: 14px;
     border-radius: 5px;
     margin: 15px;
     padding: 0px 5px;
     color: white!important;
-    transition: 2s;
+    transition: 0.5s;
     :hover{
-        background-color:#076196;
+        background-color:#784cbf;
     }
 `
 

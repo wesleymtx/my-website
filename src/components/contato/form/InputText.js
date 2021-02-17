@@ -8,7 +8,7 @@ const StyledInputText = styled.input`
     border-radius: 5px;
     padding: 8px;
     font-size: 16px;
-    width: 500px;
+    width: 100%;
     :hover{
         background-color: #bfbfbf;
     }
