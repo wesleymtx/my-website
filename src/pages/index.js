@@ -9,6 +9,7 @@ export default function HomePage(){
     return <>
         <Head>
           <meta name="google-site-verification" content="R86txzepkoBAbhQ2O-obkmZKrNo8VlUWI9Rsd1uJ670" />
+          <meta name="robots" content="noindex" />
         </Head>
         <MainHome>
             <ContainerItems>
