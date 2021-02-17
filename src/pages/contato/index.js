@@ -7,7 +7,7 @@ import TextArea from '../../components/contato/form/TextArea';
 import PhotoProfile from '../../patterns/PhotoProfile';
 import ContainerCard from '../../components/contato/card/containerCard';
 import contacts from '../../apis/contacts';
-
+import Head from 'next/head'
 
 export default function Form(){
     const handleForm = (event)=>{
@@ -50,6 +50,10 @@ export default function Form(){
         })
     }
     return (
+    <>
+    <Head>
+        <title>Contato</title>
+    </Head>
     <div style={{'display':'flex', 'flex-direction':'column', 'align-items':'center'}}>
             <ContainerCard>
                 <PhotoProfile src="foto-perfil.jpg"></PhotoProfile>
@@ -68,5 +72,6 @@ export default function Form(){
                 <InputSubmit/>
             </FormComponent>
     </div>
+    </>
     )
 }

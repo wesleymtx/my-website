@@ -2,8 +2,14 @@ import {H2} from '../../components/portifolio/Titles'
 import MainPortifolio from '../../components/portifolio/MainPortifolio'
 import Link from '../../components/portifolio/Link'
 import {experiencies, projects} from '../../apis/portifolio.js'
+import Head from 'next/head'
+
 const Portifolio = ()=>{
     return(
+        <>
+        <Head>
+            <title>portifófio</title>
+        </Head>
         <MainPortifolio>
             <H2>Experiência</H2>
             {experiencies.map((exp)=>{
@@ -15,7 +21,7 @@ const Portifolio = ()=>{
             })}
 
         </MainPortifolio>
-        
+        </>
     )
 }
 
