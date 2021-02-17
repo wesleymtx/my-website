@@ -3,9 +3,13 @@ import {ColumnItems, ContainerItems} from '../components/homepage/LayoutHome';
 import PhotoProfile from '../patterns/PhotoProfile';
 import {H1, H2, H3} from '../components/homepage/Titles';
 import RowSocialMedia from '../components/homepage/SocialMedia';
+import Head from 'next/head'
 
 export default function HomePage(){
     return <>
+        <Head>
+          <meta name="google-site-verification" content="R86txzepkoBAbhQ2O-obkmZKrNo8VlUWI9Rsd1uJ670" />
+        </Head>
         <MainHome>
             <ContainerItems>
             <ColumnItems>
